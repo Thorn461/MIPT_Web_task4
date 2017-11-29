@@ -24,7 +24,7 @@ func PowerGenerator(number int) (func() int) {
 func DifferentWordsCount (s string) int {
 	allWords := make(map[string] int)
 	currentWord := ""
-	isWord := true
+	isWord := false
 	for i := 0; i < len(s); i++ {
 		if unicode.IsLetter(rune(s[i])) {
 			isWord = true
